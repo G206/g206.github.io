@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import {
-  AppBar, Toolbar, Typography,
+  AppBar, Toolbar, Typography, Link
 } from '@material-ui/core';
 import logoImage from '../../../images/web_design.png';
 
@@ -16,7 +16,7 @@ const NavAppBar = (props) => {
   const {
     navBar, appBar, appBarShift,
     appBarShiftLeft, appBarShiftRight, // eslint-disable-line no-unused-vars
-    logo, text, leftJust, rightJust,
+    logo, text, text2, leftJust, rightJust,
   } = props;
   const { anchor, openDrawer } = props;
 
@@ -30,16 +30,20 @@ const NavAppBar = (props) => {
     >
       <Toolbar>
         <Typography
-          variant="display1"
-          color="inherit"
-          className={classNames(text, leftJust)}
+          variant="h4"
+          className={classNames(text2, leftJust)}
         >
           <img src={logoImage} className={logo} alt="logo" />
-          G.Dev
+          <Link
+              to="/"
+              color="inherit"
+          >
+            G.Dev
+          </Link>
+
         </Typography>
         <Typography
-          variant="display1"
-          color="inherit"
+          variant="h4"
           className={classNames(text, rightJust)}
         >
           React JS

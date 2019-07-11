@@ -50,16 +50,16 @@ const theme = createMuiTheme(
       },
       typography: {
         fontFamily: "'Xolonium', 'Franklin', 'Roboto', 'Arial', sans-serif",
-        display4: {
+        h4: {
           fontFamily: "'Avengeance', 'Franklin', 'Roboto', 'Arial', sans-serif",
         },
-        display3: {
+        h3: {
           fontFamily: "'Avengeance', 'Franklin', 'Roboto', 'Arial', sans-serif",
         },
-        display2: {
+        h2: {
           fontFamily: "'Avengeance', 'Franklin', 'Roboto', 'Arial', sans-serif",
         },
-        display1: {
+        h1: {
           fontFamily: "'Avengeance', 'Franklin', 'Roboto', 'Arial', sans-serif",
         },
       },
