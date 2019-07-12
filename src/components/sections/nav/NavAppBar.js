@@ -7,8 +7,23 @@ import {
 } from '@material-ui/core';
 import logoImage from '../../../images/web_design.png';
 
-const styles = () => ({
+const styles = (theme) => ({
   container: {
+  },
+  'a:link, a:visited, a:hover, a:active': {
+    textDecoration: 'none',
+  },
+  'a:link': {
+    color: theme.palette.primary2.main,
+  },
+  'a:visited': {
+    color: theme.palette.primary2.main,
+  },
+  'a:hover': {
+    color: theme.palette.secondary.main,
+  },
+  'a:active': {
+    color: theme.palette.primary.main,
   },
 });
 
@@ -40,7 +55,6 @@ const NavAppBar = (props) => {
           >
             G.Dev
           </Link>
-
         </Typography>
         <Typography
           variant="h4"

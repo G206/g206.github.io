@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import NavAppBar from './nav/NavAppBar';
 import Header from './Header';
+import Routes from './Routes';
 import Footer from './Footer';
 
 const drawerWidth = 240;
@@ -109,9 +110,11 @@ const Nav = (props) => {
     >
       <NavAppBar
           {...classes}
-
       />
       <Header />
+      <Routes
+
+      />
       <Footer />
     </nav>
   );
