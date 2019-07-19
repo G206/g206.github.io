@@ -7,23 +7,8 @@ import {
 } from '@material-ui/core';
 import logoImage from '../../../images/web_design.png';
 
-const styles = (theme) => ({
+const styles = () => ({
   container: {
-  },
-  'a:link, a:visited, a:hover, a:active': {
-    textDecoration: 'none',
-  },
-  'a:link': {
-    color: theme.palette.primary2.main,
-  },
-  'a:visited': {
-    color: theme.palette.primary2.main,
-  },
-  'a:hover': {
-    color: theme.palette.secondary.main,
-  },
-  'a:active': {
-    color: theme.palette.primary.main,
   },
 });
 
@@ -31,7 +16,7 @@ const NavAppBar = (props) => {
   const {
     navBar, appBar, appBarShift,
     appBarShiftLeft, appBarShiftRight, // eslint-disable-line no-unused-vars
-    logo, text, text2, leftJust, rightJust,
+    logo, text, leftJust, rightJust, linkText2,
   } = props;
   const { anchor, openDrawer } = props;
 
@@ -46,12 +31,12 @@ const NavAppBar = (props) => {
       <Toolbar>
         <Typography
           variant="h4"
-          className={classNames(text2, leftJust)}
+          className={classNames(linkText2, leftJust)}
         >
           <img src={logoImage} className={logo} alt="logo" />
           <Link
-              to="/"
               color="inherit"
+              href="/"
           >
             G.Dev
           </Link>

@@ -20,6 +20,30 @@ const styles = theme => ({
   text2: {
     color: theme.palette.text.alternate,
   },
+  linkText: {
+    color: theme.palette.secondary.main,
+    "&:visited": {
+      color: theme.palette.secondary.main
+    },
+    "&:hover": {
+      color: theme.palette.primary.main,
+    },
+    "&:active": {
+      color: theme.palette.secondary.main,
+    }
+  },
+  linkText2: {
+    color: theme.palette.primary2.main,
+    "&:visited": {
+      color: theme.palette.primary2.main
+    },
+    "&:hover": {
+      color: theme.palette.secondary.main,
+    },
+    "&:active": {
+      color: theme.palette.primary2.main,
+    }
+  },
   leftJust: {
     display: 'inline-block',
     textAlign: 'left',
@@ -31,6 +55,9 @@ const styles = theme => ({
     textAlign: 'right',
     verticalAlign: 'text-bottom',
     width: '49%',
+  },
+  listContainer: {
+    margin: '4% 0%'
   },
   logo: {
     maxHeight: 60,
@@ -113,7 +140,7 @@ const Nav = (props) => {
       />
       <Header />
       <Routes
-
+          {...classes}
       />
       <Footer />
     </nav>

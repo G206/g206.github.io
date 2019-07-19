@@ -8,82 +8,75 @@ import classNames from "classnames";
 
 const styles = theme => ({
   container: {
-    flexGrow: 1,
-  },
-  headerImg: {
-    width: theme.image.width,
-  },
-  'a:link, a:visited, a:hover, a:active': {
-    textDecoration: 'none',
-  },
-  'a:link': {
-    color: theme.palette.primary.main,
-  },
-  'a:visited': {
-    color: theme.palette.primary.main,
-  },
-  'a:hover': {
-    color: theme.palette.secondary.main,
-  },
-  'a:active': {
-    color: theme.palette.primary.main,
   },
 });
 
 const Routes = (props) => {
-  const { classes } = props;
   const {
-    logo, text, text2, leftJust, rightJust,
+    leftJust, linkText, listContainer
   } = props;
   return (
-      <Grid container>
-        <Grid item xs>
+      <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+      >
+        <Grid item xs={10}>
           <Typography
-              variant="h4"
+              variant="h3"
+              className={classNames(listContainer, linkText, leftJust)}
           >
             <Link
+                color="inherit"
                 href="https://g206.github.io/www-react/"
                 target="_blank"
-                className={classNames(text, leftJust)}
+                rel="noopener"
             >
               G.Dev - React
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={10}>
           <Typography
-              variant="h4"
+              variant="h3"
+              className={classNames(listContainer, linkText, leftJust)}
           >
             <Link
                 href="https://g206.github.io/www/"
                 target="_blank"
-                color="primary"
+                rel="noopener"
+                color="inherit"
             >
-              G.Dev - Bootstrap & jQuery
+              G.Dev - Bootstrap
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={10}>
           <Typography
-              variant="h4"
+              variant="h3"
+              className={classNames(listContainer, linkText, leftJust)}
           >
             <Link
                 href="https://w3asp.azurewebsites.net/"
                 target="_blank"
-                color="primary"
+                rel="noopener"
+                color="inherit"
             >
               G.Dev - ASP
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={10}>
           <Typography
-              variant="h4"
+              variant="h3"
+              className={classNames(listContainer, linkText, leftJust)}
           >
             <Link
                 href="https://g206.github.io/galaga/"
                 target="_blank"
-                color="primary"
+                rel="noopener"
+                color="inherit"
             >
               Galaga
             </Link>

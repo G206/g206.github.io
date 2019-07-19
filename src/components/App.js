@@ -5,7 +5,6 @@ import Nav from './sections/Nav';
 
 const styles = theme => ({
   container: {
-    flexGrow: 1,
   },
 });
 
